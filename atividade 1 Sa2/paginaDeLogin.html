@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina do login</title>
+    <script src="./jslogin.js"></script>
     <style>
         body{
             background-color: #2c2c2c;
@@ -72,6 +73,11 @@
 
     </style>
 </head>
+
+
+
+
+
 <body>
 
     <header>
@@ -82,11 +88,11 @@
     <div class="login">
 
         <h2>Login</h2>
-        <input type="text" placeholder="E-Mail">
+        <input type="email" placeholder="E-Mail" id="login" >
         <br><br>
-        <input type="text" placeholder="Senha">
+        <input type="password" placeholder="Senha" id="senha">  
         <br><br>
-        <button class="bnt-login">Login</button>
+        <button class="bnt-login" onclick="Validar()">Login</button>
     </div>
 </body>
 </html>
